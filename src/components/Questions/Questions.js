@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Questions.css";
+import { useNavigate } from "react-router-dom";
 
 const Question = ({ questionTree }) => {
+  const navigate = useNavigate();
   const [currentId, setCurrentId] = useState("root"); // Commence à la racine
   const [reponses_suivantes, setReponses] = useState([]); // Choix à afficher
   const [question, setQuestion] = useState(""); // Titre affiché
@@ -80,33 +82,50 @@ const Question = ({ questionTree }) => {
   };
 
   return (
-    <div className="question">
-      <h1>{question}</h1>
-      <div>
-        {reponses_suivantes.map((choice) => (
+    <div>
+      <header className="header">
+        <h1 className="title">TOUT VA BIEN.</h1>
+        <div className="buttons-header">
           <button
-            key={choice.id}
-            onClick={() => handleChoiceClick(choice.id)}
-            className="choice-button"
+            className="button refaire"
+            onClick={() => window.location.reload()}
           >
-            {choice.reponse}
+            REFAIRE
           </button>
-        ))}
+          <button className="button sortir" onClick={() => navigate("/sortie")}>
+            SORTIR
+          </button>
+        </div>
+        <img src={require("../../img/logo.png")} alt="Logo" className="logo" />
+      </header>
+      <div className="question">
+        <h1>{question}</h1>
+        <div>
+          {reponses_suivantes.map((choice) => (
+            <button
+              key={choice.id}
+              onClick={() => handleChoiceClick(choice.id)}
+              className="choice-button"
+            >
+              {choice.reponse}
+            </button>
+          ))}
+        </div>
+        <button
+          onClick={handleBackClick}
+          disabled={currentId === "root"}
+          className="back-button"
+        >
+          Retour
+        </button>
+        <button
+          onClick={handleEraseClick}
+          disabled={currentId === "root"}
+          className="back-button"
+        >
+          Effacer
+        </button>
       </div>
-      <button
-        onClick={handleBackClick}
-        disabled={currentId === "root"}
-        className="back-button"
-      >
-        Retour
-      </button>
-      <button
-        onClick={handleEraseClick}
-        disabled={currentId === "root"}
-        className="back-button"
-      >
-        Effacer
-      </button>
     </div>
   );
 };

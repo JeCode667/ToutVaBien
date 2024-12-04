@@ -2,7 +2,7 @@ const questionTree = {
   // Confiance en soi
   root: {
     // Question initiale
-    question: "Te sens-tu parfois inférieur(e) à d'autres de ton âge ?",
+    question: "Te sens-tu parfois inférieur(e) à d'autres personnes de ton âge ?",
     reponses_suivantes: ["oui-question", "non-question"],
   },
 
@@ -10,7 +10,7 @@ const questionTree = {
   "oui-question": {
     reponse: "Oui",
     question:
-      "Quand tu te sens inférieur(e), est-ce que tu arrives à en parler avec des mais ou quelqu'un de ta famille ?",
+      "Quand tu te sens inférieur(e), est-ce que tu arrives à en parler avec des ami(e)s ou quelqu'un de ta famille ?",
     reponses_suivantes: ["oui-question1", "non-question1"],
   },
 

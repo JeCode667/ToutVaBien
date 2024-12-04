@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+/* Réinitialisation générale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  height: 100%; /* S'étend sur toute la hauteur */
+  overflow-y: auto; /* Active le défilement vertical */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #A1E3FF, #F0F9FF);
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  min-height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Aligne les enfants verticalement */
+}
+
+/* Navigation */
+nav {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #008CFF; /* Bleu vif pour le header */
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fixe la navigation au sommet */
+  top: 0;
+  left: 0;
+  width: 100%; /* S'étend sur toute la largeur */
+  z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  padding-top: 60px; /* Compense la hauteur de la barre de navigation */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 20px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #FFD700; /* Jaune vif au survol */
+  color: #333;
+  transform: scale(1.1);
+}
+
+
+
+/* Conteneurs des pages */
+.home-container, .page-container, .quiz-container, .sortie-container {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+/* Titres et texte */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Boutons */
+button {
+  background-color: #FFD700;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #FFC107;
+  transform: scale(1.05);
 }
