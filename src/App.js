@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import PageInformation from "./pages/PageInformation";
 import Quiz from "./pages/Quiz";
 import SortiePage from "./pages/SortiePage";
+import Aide from "./components/Aide/Aide";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/sortie" element={<SortiePage />} />
         </Routes>
+        <Aide />
       </div>
     </Router>
   );

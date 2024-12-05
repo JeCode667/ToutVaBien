@@ -10,75 +10,79 @@ body {
   min-height: 100vh;
 }
 
-/* Conteneur principal */
-.question {
-  background-color: #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+.grand-conteneur {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
   padding: 20px;
   width: 100%;
-  max-width: 500px;
-  text-align: center;
 }
 
-/* Titre */
-.question h1 {
-  font-size: 28px;
-  color: #333333;
-  margin-bottom: 30px;
+.question-container {
+  width: 590px;
+  height: 93px;
+  background-color: #FBFBFB; 
+  border-radius: 10px;
+  padding: 20px 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  box-shadow: 
+0 0 0 0px #e7e6e7, 
+0 0 0 4px #d3d2d3, 
+0 0 0 5px #a7a6a7, 
+0 0 0 6px #767576,  
+0 0 0 7px #555455,  
+0 0 0 10px #fbfbfb; 
+
 }
 
-/* Boutons de choix */
+.reponses-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  align-self: flex-end;
+  width: 590px;
+}
+
 .choice-button {
-  display: block;
   width: 100%;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 15px 20px;
-  margin: 15px 0;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.choice-button:hover {
-  background-color: #0056b3;
-  transform: scale(1.02);
-}
-
-.choice-button:focus {
-  outline: none;
-  box-shadow: 0 0 6px #007bff;
-}
-
-/* Bouton "Back" */
-.question button.back-button {
-  background-color: #6c757d;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 20px;
+  height: 93px;
+  border-radius: 10px;
+  padding: 20px 12px;
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  background-color: transparent; 
+  box-shadow: none; 
+  margin-bottom: 20px;
 }
 
-.question button.back-button:hover {
-  background-color: #5a6268;
-  transform: scale(1.02);
+
+.choice-oui {
+  background-color: #c3d7a2;
+  box-shadow: 
+  0 0 0 0px #c3d7a2,  
+  0 0 0 4px #a7c17c, 
+  0 0 0 5px #8bab56,
+  0 0 0 6px #769249, 
+  0 0 0 7px #5e733c,  
+  0 0 0 10px white; 
 }
 
-.question button.back-button:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
+.choice-non {
+  background-color: #f5b694;
+  box-shadow: 
+  0 0 0 0px #f29a7a, 
+  0 0 0 4px #ee8762,  
+  0 0 0 5px #eb764c,  
+  0 0 0 6px #e25f30,  
+  0 0 0 7px #c24a1f, 
+  0 0 0 10px white; 
+
+
+    
 }
 
-/* Marges générales */
-.question button {
-  margin: 10px 0;
-}

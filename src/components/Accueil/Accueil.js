@@ -18,24 +18,28 @@ const Accueil = () => {
           </button>
         </div>
       </header>
-
+<div>
+  <img src={require("../../img/logo.png")} alt="Logo" id="logo" />
+</div>
+      
       <div className="content">
-        <img src={require("../../img/logo.png")} alt="Logo" className="logo" />
+        
         <div className="description">
-          <p>
+          <p class="textbox">
             Bienvenue sur <strong>TOUT VA BIEN</strong> ! Ce site est là pour t'aider à mettre des mots sur ce que tu peux ressentir. Tu n'auras qu'à répondre à quelques petites questions, c'est super simple !
           </p>
+          <div class="textbox">
           <p>
-            Tu peux recommencer du début à tout moment avec le bouton <span className="highlight">REFAIRE</span>.
+            Tu peux recommencer du début à tout moment avec <button class="bouton-tvb rouge"><img id="bouton-sortir" src={require("../../img/sortir.png")} alt="sortir"></img></button>.
           </p>
+          
           <p>
-            Si tu as besoin de quitter ce site rapidement, clique sur le bouton <span className="highlight">SORTIR</span>.
+            Si tu as besoin de quitter ce site rapidement, clique sur <button class="bouton-tvb bleu"><img id="bouton-sortir" src={require("../../img/refaire.png")} alt="sortir"></img></button>.
           </p>
-          <p className="anonymat">Chez nous, aucune donnée n'est récupérée, tu es totalement anonyme !</p>
+          </div>
+          <p id="anonyme" class="textbox">Chez nous, aucune donnée n'est récupérée, tu es totalement anonyme !</p>
         </div>
-        <button className="commencer-button" onClick={() => navigate("/quiz")}>
-          COMMENCER LE QUIZ
-        </button>
+        <button onClick={() => navigate("/quiz")} class="bouton-tvb jaune commencer"><img id="bouton-sortir" src={require("../../img/commencer.png")} alt="sortir"></img></button>.
       </div>
     </div>
   );

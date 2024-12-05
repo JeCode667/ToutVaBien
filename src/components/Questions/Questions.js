@@ -86,46 +86,34 @@ const Question = ({ questionTree }) => {
       <header className="header">
         <h1 className="title">TOUT VA BIEN.</h1>
         <div className="buttons-header">
-          <button
-            className="button refaire"
-            onClick={() => window.location.reload()}
-          >
-            REFAIRE
-          </button>
-          <button className="button sortir" onClick={() => navigate("/sortie")}>
-            SORTIR
-          </button>
+
+            <button onClick={() => window.location.reload()} class="bouton-tvb bleu"><img id="bouton-sortir" src={require("../../img/refaire.png")} alt="sortir"></img></button>
+          
+          <button onClick={() => navigate("/sortie")} class="bouton-tvb rouge"><img id="bouton-sortir" src={require("../../img/sortir.png")} alt="sortir"></img></button>
         </div>
         <img src={require("../../img/logo.png")} alt="Logo" className="logo" />
       </header>
-      <div className="question">
-        <h1>{question}</h1>
-        <div>
-          {reponses_suivantes.map((choice) => (
-            <button
-              key={choice.id}
-              onClick={() => handleChoiceClick(choice.id)}
-              className="choice-button"
-            >
-              {choice.reponse}
-            </button>
-          ))}
-        </div>
-        <button
-          onClick={handleBackClick}
-          disabled={currentId === "root"}
-          className="back-button"
-        >
-          Retour
-        </button>
-        <button
-          onClick={handleEraseClick}
-          disabled={currentId === "root"}
-          className="back-button"
-        >
-          Effacer
-        </button>
-      </div>
+      
+      <div className="grand-conteneur">
+  <div className="question-container">
+    <p>{question}</p>
+  </div>
+  <div className="reponses-container">
+    {reponses_suivantes.map((choice, index) => (
+      <button
+        key={choice.id}
+        onClick={() => handleChoiceClick(choice.id)}
+        className={`choice-button ${index === 0 ? "choice-oui" : "choice-non"}`}
+      >
+        {choice.reponse}
+      </button>
+    ))}
+  </div>
+</div>
+
+
+
+
     </div>
   );
 };
