@@ -16,6 +16,7 @@ const Accueil = () => {
           <button className="button sortir" onClick={() => navigate("/sortie")}>
             SORTIR
           </button>
+          
         </div>
       </header>
 <div>
@@ -30,11 +31,11 @@ const Accueil = () => {
           </p>
           <div class="textbox">
           <p>
-            Tu peux recommencer du début à tout moment avec <button class="bouton-tvb rouge"><img id="bouton-sortir" src={require("../../img/sortir.png")} alt="sortir"></img></button>.
-          </p>
+            Tu peux recommencer du début à tout moment avec <button class="bouton-tvb rouge" onClick={() => navigate("/sortie")}><img id="bouton-sortir" src={require("../../img/sortir.png")} alt="sortir"></img></button>.
+          </p>                                                
           
           <p>
-            Si tu as besoin de quitter ce site rapidement, clique sur <button class="bouton-tvb bleu"><img id="bouton-sortir" src={require("../../img/refaire.png")} alt="sortir"></img></button>.
+            Si tu as besoin de quitter ce site rapidement, clique sur <button class="bouton-tvb bleu" onClick={() => window.location.reload()}><img id="bouton-sortir" src={require("../../img/refaire.png")} alt="sortir"></img></button>.
           </p>
           </div>
           <p id="anonyme" class="textbox">Chez nous, aucune donnée n'est récupérée, tu es totalement anonyme !</p>
