@@ -1,5 +1,5 @@
 import React from "react";
-import Questions from '../components/Questions/Questions';
+import Questions from "../data/Questions/Questions";
 
 import questionTree from "../data/QuestionTree";
 

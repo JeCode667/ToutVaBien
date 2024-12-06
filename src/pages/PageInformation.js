@@ -1,6 +1,6 @@
 // SignUp.js
-import React from 'react';
-import Informations from '../components/Informations/Informations';
+import React from "react";
+import Informations from "../ancien/Informations/Informations";
 
 const PageInformation = () => {
   return (
@@ -11,17 +11,3 @@ const PageInformation = () => {
 };
 
 export default PageInformation;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
