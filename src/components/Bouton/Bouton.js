@@ -2,33 +2,31 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Bouton.css";
 
-const Bouton = (bouton) => {
+const Bouton = ({ bouton }) => { // On récupère correctement la prop 'bouton'
   const navigate = useNavigate();
 
   return (
     <button
-      className={(bouton = "refaire" ? "bouton-tvb rouge" : "bouton-tvb bleu")}
+      className={bouton === "refaire" ? "bouton-tvb bleu" : "bouton-tvb rouge"}
       onClick={
-        (bouton = "refaire"
+        bouton === "refaire"
           ? () => window.location.reload()
-          : () => navigate("/sortie"))
+          : () => navigate("/sortie")
       }
     >
-      {
-        (bouton = "refaire" ? (
-          <img
-            id="bouton-sortir"
-            src={require("../../img/refaire.png")}
-            alt="sortir"
-          ></img>
-        ) : (
-          <img
-            id="bouton-refaire"
-            src={require("../../img/refaire.png")}
-            alt="refaire"
-          ></img>
-        ))
-      }
+      {bouton === "sortir" ? (
+        <img
+          id="bouton-sortir"
+          src={require("../../img/sortir.png")}
+          alt="sortir"
+        />
+      ) : (
+        <img
+          id="bouton-refaire"
+          src={require("../../img/refaire.png")}
+          alt="refaire"
+        />
+      )}
     </button>
   );
 };
