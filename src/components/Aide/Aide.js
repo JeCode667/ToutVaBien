@@ -1,14 +1,13 @@
-import React from 'react';
-import './Aide.css'; // Fichier de styles
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Aide.css";
 
 const Aide = () => {
-  const gererClic = () => {
-    alert('CAide');
-  };
-
   return (
-    <div className="aide-flottante" onClick={gererClic}>
-      <span className="point-interrogation">?</span>
+    <div className="aide">
+      <Link to="/informations" className="aide-button">
+        ?
+      </Link>
     </div>
   );
 };

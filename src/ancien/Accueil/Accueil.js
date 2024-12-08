@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Accueil.css";
-import Bouton from "../../components/Bouton/Bouton";
+import Bouton from "../../components/BoutonSortie/BoutonSortie";
 
 const Accueil = () => {
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ const Accueil = () => {
           </p>
           <div class="textbox">
             <p>
-              Tu peux recommencer du début à tout moment avec{" "}
+              Tu peux recommencer du début à tout moment avec
               <button
                 class="bouton-tvb rouge"
                 onClick={() => navigate("/sortie")}

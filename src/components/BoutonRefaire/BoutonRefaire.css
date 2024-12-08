@@ -1,0 +1,21 @@
+button.refaire {
+  background-color: rgb(28, 227, 115); 
+  color: #ffffff; 
+  font-size: 24px; 
+  font-weight: bold; 
+  border: none; 
+  border-radius: 8px; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  text-transform: uppercase; 
+}
+
+button.refaire:hover {
+  background-color: rgb(23, 196, 60); 
+  color: #020101; 
+}
+
+button.refaire:active {
+  transform: scale(0.95); 
+}

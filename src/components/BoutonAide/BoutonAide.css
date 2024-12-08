@@ -1,0 +1,23 @@
+button.aide {
+    background-color: #FFD664;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+}
+
+button.aide:hover {
+    background-color: #fbc01e;
+    color: #0b0404;
+}
+
+button.aide:active {
+    transform: scale(0.95);
+}

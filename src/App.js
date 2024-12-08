@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import PageInformation from "./pages/PageInformation";
 import Quiz from "./pages/Quiz";
@@ -11,15 +11,9 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <a href="/" id="accueil">
-            Accueil
-          </a>
-          <a href="/informations">Informations</a>
-        </nav>
-
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/home" />} /> {/* Redirection automatique vers la page d'accueil */}
+          <Route path="/home" element={<Home />} /> {/* Page d'accueil par défaut */}
           <Route path="/informations" element={<PageInformation />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/sortie" element={<SortiePage />} />
@@ -32,9 +26,8 @@ function App() {
 
 export default App;
 
-//mettre le bouton sortir en plus gros ?
-// dans informations mettre les infos sur toutes la largeur de la page
-//dans informations mettre bien le logo et le nom TOUT VA BIEN
-// faire que le bouton ? en bas à gauche renvoie vers la page d'informations
-//designer et trouver le thème de la page vers laquelle on re dirige quand on clique sur sortir
-//mettre bien les 2 carrés de réponses dans le quizz (ils sont décalé)
+// Liste des tâches de mise à jour à réaliser :
+// 2. Mettre à jour la page "Informations" pour utiliser toute la largeur de la page.
+// 4. Créer un bouton "?" en bas à gauche de la page qui redirige vers la page "Informations".
+// 5. Déterminer le thème de la page de redirection pour le bouton "Sortir".
+// 6. Corriger l'alignement des carrés de réponses dans le Quiz.
