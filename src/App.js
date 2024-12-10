@@ -1,25 +1,32 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
-import Home from "./pages/Home";
-import PageInformation from "./pages/PageInformation";
-import Quiz from "./pages/Quiz";
-import SortiePage from "./pages/SortiePage";
-import Aide from "./components/Aide/Aide";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import Header from "./components/Header/Header";
+import PageInformation from "./pages/Informations/PageInformation";
+import Quiz from "./pages/Quiz/Quiz";
+import Home from "./pages/Home/Home";
+import BoutonAide from "./components/BoutonAide/BoutonAide";
 
 function App() {
   return (
     <Router>
+      <Header />
       <div>
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} /> {/* Redirection automatique vers la page d'accueil */}
-          <Route path="/home" element={<Home />} /> {/* Page d'accueil par défaut */}
+          <Route path="/" element={<Navigate to="/home" />} />{" "}
+          {/* Redirection automatique vers la page d'accueil */}
+          <Route path="/home" element={<Home />} />{" "}
+          {/* Page d'accueil par défaut */}
           <Route path="/informations" element={<PageInformation />} />
           <Route path="/quiz" element={<Quiz />} />
-          <Route path="/sortie" element={<SortiePage />} />
         </Routes>
-        <Aide />
       </div>
+      <BoutonAide />
     </Router>
   );
 }

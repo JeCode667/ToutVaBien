@@ -1,0 +1,30 @@
+.text-container {
+  margin: 60px auto 50px;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content {
+  background-color: #a5d1fb;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.text-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+p.anonyme {
+  background-color: #ff6347;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}

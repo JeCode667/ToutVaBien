@@ -1,6 +1,6 @@
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=VT323&display=swap");
 
 /* Réinitialisation générale */
 * {
@@ -9,24 +9,25 @@
   box-sizing: border-box;
 }
 
-.title{
+.title {
   padding: 20px;
   max-width: 800px;
   margin: auto;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
-#logo{
+#logo {
   margin-top: 100px;
 }
 
-html, body {
+html,
+body {
   height: 100%; /* S'étend sur toute la hauteur */
   overflow-y: auto; /* Active le défilement vertical */
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #A1E3FF, #F0F9FF);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #a1e3ff, #f0f9ff);
   color: #333;
 }
 
@@ -41,7 +42,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #008CFF; /* Bleu vif pour le header */
+  background-color: #008cff; /* Bleu vif pour le header */
   padding: 15px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed; /* Fixe la navigation au sommet */
@@ -67,15 +68,16 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #FFD700; /* Jaune vif au survol */
+  background-color: #ffd700; /* Jaune vif au survol */
   color: #333;
   transform: scale(1.1);
 }
 
-
-
 /* Conteneurs des pages */
-.home-container, .page-container, .quiz-container, .sortie-container {
+.home-container,
+.page-container,
+.quiz-container,
+.sortie-container {
   display: block;
   margin: 0 auto;
   padding: 20px;
@@ -91,109 +93,3 @@ h1 {
   margin-bottom: 20px;
   color: #333;
 }
-
-/* Boutons */
-button {
-  background-color: #FFD700;
-  color: #333;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-
-p {
-  margin-bottom: 5px;
-}
-
-.textbox {
-  border: 1px solid #ccc;/*Bordure grise*/
-  border-radius: 5px;/*coins arrondis*/
-  padding: 20px;/*espace intérieur*/
-  margin: 20px 0;/* Marge extérieure*/
-  background-color: #f9f9f9; /*Couleur de fond*/
-  width: 50vw;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);/* ombre douce*/
-  font-family: Parkinsans;
-  font-weight: 700;
-  font-size: 16px;/*taille de police (àajuster si besoin)*/
-  color: #333; /* couleur du texte*/
-  line-height: 1.5;/*Hauteur de ligne*/
-}
-
-.bouton-tvb {
-  width: 116.8px;/*taille exacte en pixels*/
-  height: 42px;/* taille exacte en pixels*/
-  border-radius: 8px;/*Coins arrondis*/
-  border: 1.6px solid #E9908D;/*bordure avec la couleur et épaisseur indiquées*/
-  background-color: #DB3A34; /* Couleur de fond */
-  box-shadow: 
-    0px 0px 0px 0.24px #0000006F,/*Première ombre avec spread*/
-    0px 0.49px 0.49px #0000001A;/*deuxième ombre avec flou léger*/
-  display: flex;
-  align-items: center;/*Centrer verticalement le contenu*/
-  justify-content: center;/* Centrer horizontalement le contenu*/
-  padding: 8px 12px; /*Espacement intérieur*/
-  cursor: pointer;
-  display: inline-flex;/*Permet au bouton de s'aligner sur une ligne ac le txt*/
-  vertical-align: middle;/* aligne verticalement le bouton avec le texte*/
-}
-
-.bouton-tvb.rouge {
-  background-color: #DB3A34; /* rouge */
-  border-color: #E9908D;/*Bordure adaptée pour le rouge*/
-}
-
-.bouton-tvb.rouge:hover {
-  background-color: #c2322d; /* Rouge plus sombre au survol*/
-}
-
-.bouton-tvb.rouge:active {
-  background-color: #a02926;/*Rouge encore + sombre lors du clic*/
-}
-
-.bouton-tvb.bleu {
-  background-color: #4A90E2; /*bleu*/
-  border-color: #2A6EBB;/* Bordure adaptée pour le bleu*/
-}
-
-.bouton-tvb.bleu:hover {
-  background-color: #3A7FCC;/*Bleu plus sombre au survol */
-}
-
-.bouton-tvb.bleu:active {
-  background-color: #2C68B0;/* bleu encore plus sombre qd on clique*/
-}
-
-.bouton-tvb.jaune {
-  background-color: #FFC107;/*Jaune*/
-  border-color: #E5A600;/* bordure adaptee pour le jaune*/
-}
-
-.bouton-tvb.jaune:hover {
-  background-color: #FFB300;/*jaune plus sombre au survol*/
-}
-
-.bouton-tvb.jaune:active {
-  background-color: #E0A500; /*Jaune encore plus sombre lors du clic*/
-}
-
-.bouton-tvb.jaune.commencer {
-  width: 220px; /* largeur + gde pour le bouton commencer*/
-}
-
-
-#bouton-sortir {
- width: 100%;
-}
-
-#bouton-refaire {
-  width: 100%;
- }

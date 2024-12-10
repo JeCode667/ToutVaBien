@@ -3,17 +3,17 @@ import { useNavigate } from "react-router-dom";
 import "./BoutonSortie.css";
 
 const BoutonSortie = () => {
-  const navigate = useNavigate();
-
   return (
-            <p>
-              <button className="sortie"
-                onClick={() => navigate("/sortie")}
-          
-              >
-                SORTIR
-              </button>
-            </p>
+    <button
+      class="bouton-tvb rouge"
+      onClick={() => (window.location.href = "https://www.youtube.com")}
+    >
+      <img
+        id="bouton-sortir"
+        src={require("../../img/sortir.png")}
+        alt="sortir"
+      ></img>
+    </button>
   );
 };
 

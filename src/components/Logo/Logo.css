@@ -1,15 +1,4 @@
-#logo {
-    display: block; /* Nécessaire pour utiliser margin auto */
-    margin: 0 auto; /* Centre horizontalement */
-    width: 170px; /* Taille du logo */
-    position: relative; /* Permet de conserver les ajustements verticaux */
-    top: 400px; /* Ajuste la position verticale si nécessaire */
-}
-
-.logo-container {
-    display: flex; /* Flexbox activé */
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement si nécessaire */
-    height: auto; /* Ajuste selon le besoin */
-    margin-top: 50px; /* Ajuste l'espacement vertical */
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

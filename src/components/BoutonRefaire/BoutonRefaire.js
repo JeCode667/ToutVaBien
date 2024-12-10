@@ -6,13 +6,13 @@ const BoutonRefaire = () => {
   const navigate = useNavigate();
 
   return (
-            <p>
-              <button  className="refaire"
-                onClick={() => window.location.reload()}
-          
-              >REFAIRE
-              </button>
-            </p>
+    <button class="bouton-tvb bleu" onClick={() => window.location.reload()}>
+      <img
+        id="bouton-refaire"
+        src={require("../../img/refaire.png")}
+        alt="refaire"
+      ></img>
+    </button>
   );
 };
 
