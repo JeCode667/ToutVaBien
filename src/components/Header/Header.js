@@ -7,10 +7,16 @@ import BoutonSortie from "../BoutonSortie/BoutonSortie";
 const Header = () => {
   return (
     <header className="header">
-      <Logo />
-      <h1 className="title">TOUT VA BIEN.</h1>
-      <BoutonRefaire />
-      <BoutonSortie />
+      <div className="button-left">
+        <BoutonRefaire />
+      </div>
+      <div className="logo-container">
+        <Logo class="logo"/>
+        <h1 className="title">TOUT VA BIEN.</h1>
+      </div>
+      <div className="button-right">
+        <BoutonSortie />
+      </div>
     </header>
   );
 };

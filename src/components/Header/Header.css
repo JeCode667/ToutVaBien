@@ -1,17 +1,52 @@
-h1.title {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  top: 90px;
-  font-size: 40px;
-  color: #333;
-  margin: 0;
-}
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 12%;
-  background-color: #3db5ff;
+  height: 17%;
+  background-color: rgba(255, 255, 255, 0.1); /* Couleur blanche translucide */
+backdrop-filter: blur(10px); /* Flou pour l'effet verre dépoli */
+-webkit-backdrop-filter: blur(10px); /* Compatibilité avec Webkit */
+border: 1px solid rgba(255, 255, 255, 0.3); /* Bord translucide */
+
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 20px;
+  box-sizing: border-box;
+}
+
+
+.button-left,
+.button-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-height: 80%;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-container h1.title {
+  font-family: Parkinsans;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

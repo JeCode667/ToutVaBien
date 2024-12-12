@@ -7,12 +7,16 @@
 }
 
 .text-content {
-  background-color: #a5d1fb;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+    background-color: rgba(255, 255, 255, 0.3); /* Couleur blanche translucide */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    backdrop-filter: blur(10px); /* Flou pour l'effet verre dépoli */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilité avec Webkit */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Bord translucide */
+    text-align: center;
 }
+
 
 .text-content p {
   font-size: 20px;
@@ -22,7 +26,10 @@
 }
 
 p.anonyme {
-  background-color: #ff6347;
+  background-color: rgba(0, 252, 38, 0.209); /* Couleur blanche translucide */
+backdrop-filter: blur(10px); /* Flou pour l'effet verre dépoli */
+-webkit-backdrop-filter: blur(10px); /* Compatibilité avec Webkit */
+border: 1px solid rgba(255, 255, 255, 0.3); /* Bord translucide */
   color: rgb(0, 0, 0);
   padding: 15px;
   border-radius: 10px;

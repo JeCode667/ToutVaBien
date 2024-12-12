@@ -9,32 +9,29 @@
   box-sizing: border-box;
 }
 
-.title {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-  font-family: "Arial", sans-serif;
-}
-
 #logo {
   margin-top: 100px;
 }
 
 html,
 body {
-  height: 100%; /* S'étend sur toute la hauteur */
-  overflow-y: auto; /* Active le défilement vertical */
+  height: 100%;
+  overflow-y: auto;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(to bottom, #a1e3ff, #f0f9ff);
+  font-family: "Parkinsans", sans-serif;
+  background-image: url("../src/img/fond4.webp");
+  background-size: cover; /* Fait en sorte que l'image couvre toute la zone */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  background-position: center; /* Centre l'image */
   color: #333;
+
 }
 
 #root {
   min-height: 100%;
   display: flex;
-  flex-direction: column; /* Aligne les enfants verticalement */
+  flex-direction: column;
 }
 
 /* Navigation */
@@ -42,18 +39,18 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #008cff; /* Bleu vif pour le header */
+  background-color: #008cff;
   padding: 15px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed; /* Fixe la navigation au sommet */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* S'étend sur toute la largeur */
+  width: 100%;
   z-index: 10;
 }
 
 body {
-  padding-top: 60px; /* Compense la hauteur de la barre de navigation */
+  padding-top: 60px;
 }
 
 nav a {
@@ -68,12 +65,11 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #ffd700; /* Jaune vif au survol */
+  background-color: #ffd700;
   color: #333;
   transform: scale(1.1);
 }
 
-/* Conteneurs des pages */
 .home-container,
 .page-container,
 .quiz-container,
@@ -87,7 +83,6 @@ nav a:hover {
   height: auto;
 }
 
-/* Titres et texte */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;

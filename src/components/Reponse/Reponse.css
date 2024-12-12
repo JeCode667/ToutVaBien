@@ -21,12 +21,8 @@
 
 .choice-oui {
   background-color: #c3d7a2;
-  box-shadow: 0 0 0 0px #c3d7a2, 0 0 0 4px #a7c17c, 0 0 0 5px #8bab56,
-    0 0 0 6px #769249, 0 0 0 7px #5e733c, 0 0 0 10px white;
 }
 
 .choice-non {
   background-color: #f5b694;
-  box-shadow: 0 0 0 0px #f29a7a, 0 0 0 4px #ee8762, 0 0 0 5px #eb764c,
-    0 0 0 6px #e25f30, 0 0 0 7px #c24a1f, 0 0 0 10px white;
 }
