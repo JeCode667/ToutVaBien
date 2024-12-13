@@ -16,16 +16,21 @@ function App() {
   return (
     <Router>
       <Header />
-      <div>
+
+      <div className="page-content">
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />{" "}
+
           {/* Redirection automatique vers la page d'accueil */}
           <Route path="/home" element={<Home />} />{" "}
+
           {/* Page d'accueil par défaut */}
           <Route path="/informations" element={<PageInformation />} />
+
           <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </div>
+
       <BoutonAide />
     </Router>
   );
