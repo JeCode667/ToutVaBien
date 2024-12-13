@@ -29,12 +29,26 @@
 }
 
 .bouton-tvb.bleu {
-  background-color: #4a90e2; /*bleu*/
-  border-color: #2a6ebb; /* Bordure adaptée pour le bleu*/
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  background: linear-gradient(180deg, #89c6ff, #5a9fff);
+  border: 2px solid #b2d5e9;  
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Jersey 15", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  
 }
 
 .bouton-tvb.bleu:hover {
-  background-color: #3a7fcc; /*Bleu plus sombre au survol */
+    background: linear-gradient(180deg, #5a9fff, #89c6ff);
 }
 
 .bouton-tvb.bleu:active {
@@ -65,3 +79,4 @@
 #bouton-refaire {
   width: 100%;
 }
+
