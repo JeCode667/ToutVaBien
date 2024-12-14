@@ -1,16 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./BoutonRefaire.css";
 import { TbReload } from "react-icons/tb";
+import "./BoutonRefaire.css";
 
 const BoutonRefaire = () => {
-  const navigate = useNavigate();
-
   return (
-    <button class="bouton-tvb bleu" onClick={() => window.location.reload()}>
+    <div class="bouton bouton-refaire" onClick={() => window.location.reload()}>
       Refaire 
       <TbReload />
-    </button>
+    </div>
   );
 };
 

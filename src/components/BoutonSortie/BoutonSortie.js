@@ -1,19 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./BoutonSortie.css";
+import { RxExit } from "react-icons/rx";
 
 const BoutonSortie = () => {
   return (
-    <button
-      class="bouton-tvb rouge"
-      onClick={() => (window.location.href = "https://www.youtube.com")}
-    >
-      <img
-        id="bouton-sortir"
-        src={require("../../img/sortir.png")}
-        alt="sortir"
-      ></img>
-    </button>
+    <div class="bouton bouton-sortir" onClick={() => (window.location.href = "https://www.youtube.com")}>
+        Sortir 
+        <RxExit />
+    </div>
   );
 };
 

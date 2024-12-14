@@ -6,16 +6,9 @@ const BoutonQuiz = () => {
   const navigate = useNavigate();
 
   return (
-    <button
-      class="bouton-tvb jaune commencer"
-      onClick={() => navigate("/quiz")}
-    >
-      <img
-        id="bouton-refaire"
-        src={require("../../img/commencer.png")}
-        alt="refaire"
-      ></img>
-    </button>
+    <div class="bouton bouton-quiz" onClick={() => navigate("/quiz")}>
+        Commencer le quiz 
+    </div>
   );
 };
 

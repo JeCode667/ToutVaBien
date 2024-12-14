@@ -1,82 +1,9 @@
-.bouton-tvb {
-  width: 116.8px; /*taille exacte en pixels*/
-  height: 42px; /* taille exacte en pixels*/
-  border-radius: 8px; /*Coins arrondis*/
-  border: 1.6px solid #e9908d; /*bordure avec la couleur et épaisseur indiquées*/
-  background-color: #db3a34; /* Couleur de fond */
-  box-shadow: 0px 0px 0px 0.24px #0000006f,
-    /*Première ombre avec spread*/ 0px 0.49px 0.49px #0000001a; /*deuxième ombre avec flou léger*/
-  display: flex;
-  align-items: center; /*Centrer verticalement le contenu*/
-  justify-content: center; /* Centrer horizontalement le contenu*/
-  padding: 8px 12px; /*Espacement intérieur*/
-  cursor: pointer;
-  display: inline-flex; /*Permet au bouton de s'aligner sur une ligne ac le txt*/
-  vertical-align: middle; /* aligne verticalement le bouton avec le texte*/
+.bouton-refaire {
+  background-color: #89C4FE;
+  border-color: #D2E5F9;
 }
 
-.bouton-tvb.rouge {
-  background-color: #db3a34; /* rouge */
-  border-color: #e9908d; /*Bordure adaptée pour le rouge*/
+.bouton-refaire:hover {
+  background-color: #5DADFE;
+  border-color: #A5CBF3;
 }
-
-.bouton-tvb.rouge:hover {
-  background-color: #c2322d; /* Rouge plus sombre au survol*/
-}
-
-.bouton-tvb.rouge:active {
-  background-color: #a02926; /*Rouge encore + sombre lors du clic*/
-}
-
-.bouton-tvb.bleu {
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  background: linear-gradient(180deg, #89c6ff, #5a9fff);
-  border: 2px solid #b2d5e9;  
-  border-radius: 20px;
-  padding: 20px 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: "Jersey 15", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
-  text-transform: uppercase;
-  cursor: pointer;
-  position: relative;
-  
-}
-
-.bouton-tvb.bleu:hover {
-    background: linear-gradient(180deg, #5a9fff, #89c6ff);
-}
-
-.bouton-tvb.bleu:active {
-  background-color: #2c68b0; /* bleu encore plus sombre qd on clique*/
-}
-
-.bouton-tvb.jaune {
-  background-color: #ffc107; /*Jaune*/
-  border-color: #e5a600; /* bordure adaptee pour le jaune*/
-}
-
-.bouton-tvb.jaune:hover {
-  background-color: #ffb300; /*jaune plus sombre au survol*/
-}
-
-.bouton-tvb.jaune:active {
-  background-color: #e0a500; /*Jaune encore plus sombre lors du clic*/
-}
-
-.bouton-tvb.jaune.commencer {
-  width: 220px; /* largeur + gde pour le bouton commencer*/
-}
-
-#bouton-sortir {
-  width: 100%;
-}
-
-#bouton-refaire {
-  width: 100%;
-}
-
