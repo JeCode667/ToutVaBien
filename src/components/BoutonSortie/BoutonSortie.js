@@ -4,7 +4,7 @@ import { RxExit } from "react-icons/rx";
 
 const BoutonSortie = () => {
   return (
-    <div class="bouton bouton-sortir" onClick={() => (window.location.href = "https://www.youtube.com")}>
+    <div className="bouton bouton-sortir" onClick={() => (window.location.href = "https://www.youtube.com")}>
         Sortir 
         <RxExit />
     </div>

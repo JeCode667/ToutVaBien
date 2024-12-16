@@ -4,7 +4,7 @@ import "./BoutonRefaire.css";
 
 const BoutonRefaire = () => {
   return (
-    <div class="bouton bouton-refaire" onClick={() => window.location.reload()}>
+    <div className="bouton bouton-refaire" onClick={() => window.location.reload()}>
       Refaire 
       <TbReload />
     </div>

@@ -6,7 +6,7 @@ const BoutonQuiz = () => {
   const navigate = useNavigate();
 
   return (
-    <div class="bouton bouton-quiz" onClick={() => navigate("/quiz")}>
+    <div className="bouton bouton-quiz" onClick={() => navigate("/quiz")}>
         Commencer le quiz 
     </div>
   );

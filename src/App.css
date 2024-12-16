@@ -12,7 +12,7 @@ html, body, #root {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("./img/accueil.png");
+  background-color: #EDF5FD;
 }
 
 .page-content {
