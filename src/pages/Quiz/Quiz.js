@@ -6,8 +6,9 @@ import "./Quiz.css";
 
 function Quiz() {
   return (
-    <div className="quiz">
+    <div>
       <Questions questionTree={questionTree} />
+      
       <BoutonAide />
     </div>
   );

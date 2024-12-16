@@ -3,30 +3,22 @@
   flex-direction: column;
   gap: 10px;
   align-self: flex-end;
-  width: 590px;
 }
 
 .choice-button {
-  width: 100%;
-  height: 93px;
-  border-radius: 10px;
-  padding: 20px 12px;
-  font-size: 16px;
+  padding: 1rem 2rem;
+  background-color: #1D8EFE;
+  width: fit-content;
+  border-radius: 2rem 2rem 0 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid #0B85FE;
+  font-weight: bolder;
+  color: white;
+  font-size: larger;
+  transition: background-color .15s ease-in-out;
+}
+
+.choice-button:hover {
+  background-color: #017AF4;
   cursor: pointer;
-  position: relative;
-  background-color: transparent;
-  box-shadow: none;
-  margin-bottom: 20px;
-}
-
-.choice-oui {
-  background-color: #c3d7a2;
-  box-shadow: 0 0 0 0px #c3d7a2, 0 0 0 4px #a7c17c, 0 0 0 5px #8bab56,
-    0 0 0 6px #769249, 0 0 0 7px #5e733c, 0 0 0 10px white;
-}
-
-.choice-non {
-  background-color: #f5b694;
-  box-shadow: 0 0 0 0px #f29a7a, 0 0 0 4px #ee8762, 0 0 0 5px #eb764c,
-    0 0 0 6px #e25f30, 0 0 0 7px #c24a1f, 0 0 0 10px white;
 }

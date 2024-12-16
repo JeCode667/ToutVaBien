@@ -8,9 +8,7 @@ const Reponse = ({ reponses_suivantes, handleChoiceClick }) => {
         <button
           key={choice.id}
           onClick={() => handleChoiceClick(choice.id)}
-          className={`choice-button ${
-            index === 0 ? "choice-oui" : "choice-non"
-          }`}
+          className="choice-button"
         >
           {choice.reponse}
         </button>

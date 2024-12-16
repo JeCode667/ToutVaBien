@@ -10,6 +10,7 @@
 .logo-title {
   display: flex;
   align-items: center;
+  column-gap: 1rem;
 }
 
 .logo-title:hover {
@@ -18,7 +19,7 @@
 }
 
 .logo-title .logo {
-  max-height: 10vh;
+  max-height: 6vh;
 }
 
 .title {
