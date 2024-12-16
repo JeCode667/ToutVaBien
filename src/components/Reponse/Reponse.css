@@ -1,8 +1,9 @@
 .reponses-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  row-gap: 1rem;
   align-self: flex-end;
+  align-items: end;
 }
 
 .choice-button {
