@@ -1,60 +1,43 @@
 .info-container {
-  margin: 50px auto; /* Centre verticalement */
-  max-width: 800px; /* Largeur maximale */
-  padding: 20px;
-  background-color: #ffffff; /* Fond blanc */
-  border-radius: 10px; /* Coins arrondis */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  padding: 3rem;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: scroll;
+  width: 80vw;
+  height: 70%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
 }
 
-/* Titre principal */
+.section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+/* Titres */
 .info-container h1 {
   text-align: center;
-  color: #333333; /* Couleur du texte */
   font-size: 2rem;
-  margin-bottom: 20px;
 }
 
-/* Sous-titres */
 .info-container h2,
 .info-container h3 {
-  color: #1a9f13; /* Couleur des titres secondaires */
-  font-size: 1.5rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-/* Contenu des sections */
-.info-container p {
-  color: #333333; /* Couleur du texte */
-  font-size: 1rem;
-  line-height: 1.6; /* Espacement des lignes */
-  margin-bottom: 15px;
-}
-
-/* Liste des éléments importants */
-.info-container ul {
-  list-style-type: none; /* Retire les puces */
-  padding: 0;
-}
-
-.info-container ul li {
-  margin-bottom: 10px;
-}
-
-.info-container ul li strong {
-  color: #ff6347; /* Mettre en valeur les informations importantes */
+  color: #1a9f13; 
+  font-size: larger;
 }
 
 /* Texte en italique */
-.info-container p em {
-  color: #555555;
-  font-style: italic;
+em {
+  color: grey;
 }
 
 /* Liens */
 .info-container a {
-  color: #007bff;
+  color: #007BFF;
   text-decoration: none;
 }
 
@@ -62,20 +45,13 @@
   text-decoration: underline;
 }
 
-/* Alignement global */
-.text-container {
+/* Liste des éléments importants */
+.info-container ul {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre les enfants horizontalement */
-  justify-content: center;
-  margin: 20px auto; /* Marge pour un espacement agréable */
+  row-gap: 0.5rem;
 }
 
-/* CSS pour le logo */
-#logo {
-  display: block; /* Permet d'utiliser la marge auto */
-  margin: 20px auto; /* Centre le logo */
-  width: 170px; /* Taille du logo */
-  position: relative; /* Position relative pour la gestion verticale */
-  top: 0; /* Remise à zéro de la position verticale */
+.info-container ul li strong {
+  color: #FF6347;
 }

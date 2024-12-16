@@ -4,7 +4,7 @@ import "./Question.css";
 const Question = ({ question }) => {
   return (
     <div className="question-container">
-      <p>{question}</p>
+      <span>{question}</span>
     </div>
   );
 };

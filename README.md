@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Tout Va Bien
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Tout Va Bien** est une plateforme web interactive destinée aux jeunes. Ce projet vise à aider les adolescents à identifier les signes de violence psychologique, physique ou de négligence dans un cadre familial ou scolaire. En les sensibilisant et en les orientant vers des ressources adaptées, cette application a pour but de contribuer à leur bien-être et à leur sécurité.
 
-## Available Scripts
+Initialement conçu pour les femmes, le projet a été adapté pour répondre aux besoins des jeunes en difficulté, notamment scolaires. Le site se veut intuitif, avec un design attractif et des questionnaires rigoureux pour maximiser son impact.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Sommaire
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. [Prérequis](#prérequis)
+2. [Installation](#installation)
+3. [Lancement de l'application](#lancement-de-lapplication)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prérequis
 
-### `npm test`
+Avant de commencer, assurez-vous d'avoir :
+- Un IDE ou un éditeur de texte comme VS Code
+- Node.js installé (version recommandée : 16.x ou supérieure)
+- npm (Node Package Manager) fourni avec Node.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+> Clonez le dépôt sur votre machine locale
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git clone https://github.com/JeCode667/ToutVaBien.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Accédez au répertoire du projet
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+cd ToutVaBien
+```
 
-### `npm run eject`
+> Installez les dépendances
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Lancement de l'application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Construisez le projet pour production
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm run build
+```
 
-## Learn More
+> Lancez l'application en mode développement
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**L'application sera accessible sur http://localhost:3000.**
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Logo](./src/img/logo.png)

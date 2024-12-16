@@ -1,25 +1,9 @@
-/* Style spécifique pour le bouton Sortie */
-button.sortie {
-  margin-right: 10px;
-  background-color: rgb(250, 36, 36); /* Fond vert */
-  color: #ffffff; /* Texte blanc */
-  font-size: 24px; /* Taille du texte augmentée pour un bouton visible */
-  font-weight: bold; /* Met le texte en gras */
-  border: none; /* Pas de bordure */
-  border-radius: 8px; /* Coins arrondis pour un design moderne */
-  padding: 10px 20px; /* Ajoute de l'espacement interne */
-  cursor: pointer; /* Curseur en forme de main au survol */
-  transition: all 0.3s ease; /* Transition pour les effets au survol */
-  text-transform: uppercase; /* Texte en majuscules */
+.bouton-sortir {
+  background-color: #FB593A;
+  border-color: #FD8B75;
 }
 
-/* Effet au survol du bouton */
-button.sortie:hover {
-  background-color: rgb(232, 26, 26); /* Fond vert foncé au survol */
-  color: #020101; /* Texte noir au survol */
-}
-
-/* Effet au clic du bouton */
-button.sortie:active {
-  transform: scale(0.95); /* Réduction légère pour effet de clic */
+.bouton-sortir:hover {
+  background-color: #FA360F;
+  border-color: #FD6749;
 }

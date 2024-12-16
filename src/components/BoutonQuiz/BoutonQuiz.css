@@ -1,3 +1,9 @@
+.bouton-quiz {
+    background-color: #FFD664;
+    border-color: #FAE2A2;
+}
 
-
-  
+.bouton-quiz:hover {
+    background-color: #FFC933;
+    border-color: #F8D677;
+}

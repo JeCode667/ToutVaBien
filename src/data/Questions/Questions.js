@@ -38,8 +38,9 @@ const Questions = ({ questionTree }) => {
   };
 
   return (
-    <div className="grand-conteneur">
+    <div className="question-reponses-container">
       <Question question={question} />
+
       <Reponse
         reponses_suivantes={reponses_suivantes}
         handleChoiceClick={handleChoiceClick}

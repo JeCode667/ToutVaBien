@@ -1,14 +1,19 @@
 import React from "react";
 import Questions from "../../data/Questions/Questions";
 import questionTree from "../../data/QuestionTree";
-import BoutonAide from "../../components/BoutonAide/BoutonAide";
 import "./Quiz.css";
+import vagues from "../../img/vagues.png"; 
 
 function Quiz() {
   return (
-    <div className="quiz">
+    <div>
       <Questions questionTree={questionTree} />
-      <BoutonAide />
+      
+      <img
+        src={vagues}
+        alt="vagues"
+        className="vagues"
+      />
     </div>
   );
 }
